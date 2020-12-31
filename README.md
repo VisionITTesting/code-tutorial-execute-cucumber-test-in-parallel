@@ -34,8 +34,8 @@ For Video where I explaind the concept: https://youtu.be/jRihi74zJFw
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M1</version>
 				<configuration>
-                    <forkCount>3</forkCount>
-                    <reuseForks>true</reuseForks>
+					<forkCount>3</forkCount>
+	    				<reuseForks>true</reuseForks>
 					<parallel>methods</parallel>
 					<threadCount>2</threadCount>
 					<perCoreThreadCount>false</perCoreThreadCount>
