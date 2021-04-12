@@ -25,7 +25,7 @@ For Video where I explaind the concept: https://youtu.be/jRihi74zJFw
     * Using above combinations, feature files will be executed in parallel. 
     * You do not necessarily have to execute the scenarios in the same feature file to be executed in parallel. Above approach of running the feature files in parallel is standard approach in nearly all the projects.
     * ```perCoreThreadCount``` should be kept as ```false```. This is used to represent that thread count mentioned above  is total and not per core. If you have dual core machine and this tag is marked as true(by default it is true), then sure fire will exeucte two thread count in each core, i.e. total of 4 parallel execution.
-    * ```forkCount``` is used to represent defines the maximum number of JVM processes that maven-surefire-plugin will spawn concurrently to execute the tests. For more details on this check the official documentation. ![Click Here](https://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html)
+    * ```forkCount``` is used to represent defines the maximum number of JVM processes that maven-surefire-plugin will spawn concurrently to execute the tests. For more details on this check the official documentation. [Click Here](https://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html)
     * Fork count is used so that for each parallel execution, sure fire will trigger a separate JVM so that there is no clash and to achieve level of separation.
 ```xml
   	<build>
